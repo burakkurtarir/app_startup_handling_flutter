@@ -25,3 +25,6 @@ Future<void> main() async {
 }
 ```
 This approach is good but we can't "retry". Users can close and open the app to restart but I think users should have an option to retry app startup. So how do we implement this feature? We will create a Cubit and call these startup functions in this Cubit. Then we will show users the correct view(loading, completed, failure).
+
+## Inspired from codewithandrea.com
+[codewithandrea article](https://codewithandrea.com/articles/robust-app-initialization-riverpod/)
